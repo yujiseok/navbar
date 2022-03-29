@@ -106,3 +106,7 @@ nav {
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
 }
+
+.menu-open {
+  background-color: rgba(0, 0, 0, 0.2);
+}

@@ -1,11 +1,15 @@
 const navSlide = () => {
+  const bodyBg = document.querySelector("body");
   const burger = document.querySelector(".burger");
   const nav = document.querySelector(".nav-links");
   const navLinks = document.querySelectorAll(".nav-links li");
 
-  // toggle nav
   burger.addEventListener("click", () => {
+    // toggle nav
     nav.classList.toggle("nav-active");
+
+    // body background
+    bodyBg.classList.toggle("menu-open");
 
     // animate links
     navLinks.forEach((link, index) => {
